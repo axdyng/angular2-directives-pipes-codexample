@@ -1,0 +1,43 @@
+<div class="pipes">
+  <h1>Pipes</h1>
+  <h5>What are pipes?</h5>
+  <p>To transform our data visually in our templates (view)</p>
+  <p>A pipe takes in data as input and transforms it to a desired output. </p>
+  <h2>Built-in Pipes</h2>
+
+  <!-- Built in pipes:
+        uppercase,
+        lowercase,
+        date,
+        currency and many more -> refer to angular2 pipe documentation
+  -->
+  <!-- Pass pipes using | -->
+  <p>{{ myString | uppercase }}</p>
+  <p>{{ myDate | date }}</p>
+  <br>
+
+  <h4>Parameterizing Pipes</h4>
+  <!-- Pass pipe params using : -->
+  <p>{{ myDate | date:"MM/dd/yy" }}</p>
+  <p>{{ myString | slice:1:5 }}</p>
+  <br>
+
+  <h4>Chaining Pipes</h4>
+  <!-- When chaining pipes, it is chained IN ORDER from left to right -->
+  <p>{{ myString | slice:1:5 | uppercase }}</p>
+
+  <hr><br>
+
+  <h2>Custom Pipes</h2>
+  <div class="customPipes">
+    <ul>
+      <li *ngFor="let rollinginthe of (team | filterHair: false)">{{ rollinginthe.name }} , hair is gray: {{ rollinginthe.grayhair }}</li>
+    </ul>
+  </div>
+
+  <button type="button" (click)="isGray()">
+    <i>Brow may wrinkle, hair grow gray; <br> Friendship never knows decay.</i>
+  </button>
+
+
+</div>

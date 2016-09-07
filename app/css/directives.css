@@ -1,0 +1,15 @@
+.login {
+  background-color: green;
+  color: white;
+}
+
+.logout {
+  background-color: lightblue;
+  color: white;
+}
+
+div {
+  width: 300px;
+  height: 100px;
+  margin: 20px;
+}

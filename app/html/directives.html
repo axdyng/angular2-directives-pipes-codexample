@@ -1,0 +1,34 @@
+<h1>Attribute Directives</h1>
+<h2> ngClass / ngStyle </h2>
+
+<!-- ngClass checks for true or false and render that CSS class -->
+<div [ngClass]="{ login: true, logOut: checkLogout() }">This is ngClass</div>
+
+<!-- Remember to add '' to property if more than a word -->
+<div [ngStyle]="{color: 'white', 'background-color': 'blue'}">THIS IS ngStyle</div>
+
+<hr>
+
+<!-- Manipulating structure of the DOM -->
+<h1>Structural Directives</h1>
+<h2>*ngIf</h2>
+<!-- Conditionally take away or insert this div from the DOM, NOT HIDE OR SHOW!! -->
+<div *ngIf="switch" [ngStyle]="{ color: 'black', 'background-color': 'lightgray', border: '2px solid black', padding: '20px' }">
+<i>New-made friendships, like new wine; <br> Age will mellow and refine.</i>
+</div>
+
+<button type="button" (click)="onSwitch()"> Toggle me! </button>
+
+<hr>
+
+<h2>*ngFor</h2>
+<ul>
+  <li *ngFor="let rollinginthe of team; let i = index">{{ rollinginthe }} - Index is: {{ i }}</li>
+</ul>
+
+<hr><br>
+
+<h2> ngSwitch </h2>
+<a href="https://angular.io/docs/ts/latest/api/common/index/NgSwitch-directive.html">More on ngSwitch directive</a>
+
+<hr><br><br>
