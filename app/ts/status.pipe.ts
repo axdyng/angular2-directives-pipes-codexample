@@ -1,5 +1,7 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
+// Please note that pipe.ts files are to be imported and declared in ** app.module.ts ** to be used across this app.
+
 @Pipe({
   name: 'filterHair',
   pure: false

@@ -9,6 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+// Please note that pipe.ts files are to be imported and declared in ** app.module.ts ** to be used across this app.
 var StatusPipe = (function () {
     function StatusPipe() {
     }
